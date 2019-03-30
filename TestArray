@@ -1,0 +1,22 @@
+package com.z;
+public class TestArray2 {
+	public static void main(String[] args) {
+		
+		//int[] nums = new int[]{23, 98, 345, 999};
+		int[] nums = {23, 98, 345, 999};
+		//length属性是数组长度
+		System.out.println(nums.length);
+		/*nums[0] = 77;
+		nums[2] = 90;
+		nums[4] = 33;      */
+		for (int i = 0; i < nums.length; i++) {
+			//printf("%d = %d", i, nums[i]);
+			System.out.println(i + " = " + nums[i]);	
+		}
+		
+	}
+}
+
+
+
+
