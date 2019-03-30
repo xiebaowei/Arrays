@@ -1,0 +1,28 @@
+package com.z;
+
+
+/**
+ * fff
+ * @author wangwang
+ *
+ */
+public class TestArray4 {
+	public static void main(String[] args) {
+		int[] nums = {189, 9, 278, 678, 33, 29, 5};
+		System.out.println("原始顺序:");
+		for (int i = 0; i < nums.length; i++) {
+			System.out.print(nums[i] + " ");
+		}
+		System.out.println();//换行
+		//交换 3
+		for (int i = 0; i < nums.length / 2; i++) {
+			int temp = nums[i];
+			nums[i] = nums[nums.length - i -1];
+			nums[nums.length - i -1] = temp;
+		}
+		System.out.println("交换后的数据:");
+		for (int i = 0; i < nums.length; i++) {
+			System.out.print(nums[i] + " ");
+		}
+	}
+}
