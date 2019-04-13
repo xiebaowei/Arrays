@@ -1,0 +1,20 @@
+package YangHui;
+
+public class YangHui {
+	public static void main (String args[]) {
+		int i;
+		int[] yh= new int [8];
+		for( i = 0;i<8;i++) {
+			yh[i] = 1;
+			for (int j=i-1;j>0;j--)
+				yh [j]= yh[j-1]+yh[j];
+			for (int j = 0;j<=i;j++)
+				System.out.print(yh[j]+"\t");
+			System.out.println();
+				
+			
+		}
+		
+	}
+
+}
